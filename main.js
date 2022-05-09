@@ -40,34 +40,6 @@ function showMeIfItsBeenActive(section) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function showNavOnscroll(){
     
     if (scrollY > 0) {
