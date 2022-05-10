@@ -1,3 +1,23 @@
+/* 
+import Swiper from 'swiper';
+
+import 'swiper/css';
+*/
+const swiper = new Swiper('swiper', {
+    slidesPerView: 1,
+    pagination: {
+        el: 'slide-pagination',
+    },
+    mousewheel: true,
+    keyboard: true,
+
+  });
+
+
+
+
+
+
 window.addEventListener('scroll', onScroll)
 
 
@@ -8,6 +28,7 @@ function onScroll() {
 
     showMeIfItsBeenActive(home)
     showMeIfItsBeenActive(services)
+    showMeIfItsBeenActive(evidence)
     showMeIfItsBeenActive(about)
 
 }

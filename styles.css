@@ -7,17 +7,17 @@
 }
 
 :root {
-    --heu: 190; 
+    --heu: 170; 
     --primari-color: hsl(var(--heu), 100%, 26%);
     --headline: hsl(210, 11%, 15%);
     --paragraph: hsl(104, 16%, 24%);
     --bg-light: hsl(180, 14%, 97%);
     --gray-paragraph: hsl(210, 9%, 31%);
     
-    --brand-beig: hsl(39, 100%, 97%);
+    --brand-beig: hsl(calc(var(--heu) - 131), 100%, 97%);
     --brand-light: hsl(calc(var(--heu) - 22), 23%, 89%);
     --brand-light-02: hsl(calc(var(--heu) + 10), 14%, 97%);
-    --brand-green: hsl(, 14%, 97%);
+    --brand-green: hsl(180, 14%, 97%);
     --brand-dark: hsl(var(--heu), 100%, 14%);
 
     --nav-height: 7.2rem; 
@@ -68,7 +68,6 @@ body{
     font-family: 'DM Sans';
     font-size: 1.6rem;
 
-    overflow: overlay;
     background: var(--bg-light);
 }
 
@@ -143,7 +142,7 @@ section div .paragraph{
     color: white;
     
     text-transform: uppercase;
-    text-decoration: none;
+    
     font-weight: 700;
     
     display: flex;
@@ -163,6 +162,10 @@ section div .paragraph{
     align-items: center;
     gap: 3.2rem;
     
+}
+
+a {
+    text-decoration: none;
 }
 
 /*=====  #HOME====================================================*/
@@ -315,6 +318,7 @@ body.menuExpended .close-menu{
     height: calc(100% - var(--nav-height));
 
 }
+
 body.menuExpended .menu{
     z-index: 1;
     top: 0;
@@ -353,11 +357,9 @@ ul.pages{
 
 li a{
     color: white;
-    text-decoration: none;
 }
 
 a.buttonOfmenu  {
-    text-decoration: none;
     display: inline-block;
     flex-direction: row;
 
@@ -403,12 +405,9 @@ body.menuExpended button path {
 
 #services header h4 {
     font-size: 1.4rem;
-    
-    
     margin-bottom: 1.6rem;
 
     color: var(--primari-color);
-    
 }
 
 #services header h2{
@@ -443,6 +442,96 @@ body.menuExpended button path {
     color: var(--headline);
 
 }
+
+/*======   EVIDENCES  =======================================================*/
+
+#evidence {
+    background: white;
+} 
+
+#evidence header h2 {
+    margin-bottom: 6rem;
+}
+
+#evidence .feedbacks  {
+    display: flex; 
+    gap: 3.2rem;
+}
+
+#evidence .feedback {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: var(--brand-beig);
+    padding: 3.2rem;
+    border-radius: 0.6rem;
+    gap: 2rem;
+}
+
+#evidence .perfil {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#evidence a {
+    color: var(--primari-color);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+#evidence .nextFeedback {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    gap: 2.4rem;
+    margin-top: 4rem;
+}
+
+#evidence .nextFeedback a {
+    cursor: pointer;
+}
+
+
+#evidence .nextFeedback a svg rect[fill*="#00856F"]:hover{
+    fill: var(--brand-dark);
+    transition: 300ms;
+    filter: brightness(1.4);
+}
+
+
+#evidence .empresas p {
+    margin-top: 10rem;
+    margin-bottom: 4.8rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    text-align: center;
+
+}
+
+#evidence .empresas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*======   ABOUT  =======================================================*/
 
